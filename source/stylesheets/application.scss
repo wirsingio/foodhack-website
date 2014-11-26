@@ -25,6 +25,7 @@ p {
 
 h2, h3 {
   margin-bottom: .5rem;
+  line-height: 33px;
 }
 
 header, p {
@@ -174,13 +175,15 @@ input[type='submit'] {
 .cta {
   .headline {
     @include gridle_state(small) {
-      font-size: 28px;
+      font-size: 23px;
+      line-height: 28px;
     }
   }
 
   .sidenote {
     @include gridle_state(small) {
       font-size: 16px;
+      line-height: 22px;
     }
   }
 
