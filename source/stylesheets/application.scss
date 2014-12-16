@@ -15,6 +15,10 @@ body {
   color: #4A4A4A;
 }
 
+.hidden {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -190,4 +194,13 @@ input[type='submit'] {
     }
   }
 
+}
+
+.input-group {
+  margin-bottom: .5rem;
+}
+
+.wirsing-newsletter-headline {
+  color: #333;
+  margin: 0 0 1.5rem;
 }
