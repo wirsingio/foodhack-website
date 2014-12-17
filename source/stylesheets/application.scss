@@ -10,7 +10,7 @@ $default-margin-bottom: 2rem;
 
 body {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #4A4A4A;
 }
@@ -36,11 +36,12 @@ h2, h3 {
   }
 }
 
-header, p {
+header {
   margin-bottom: $default-margin-bottom;
 }
 
 p {
+  margin-bottom: 1rem;
   @include gridle_state(small) {
     font-size: 14px;
   }
@@ -193,7 +194,6 @@ input[type='submit'] {
       line-height: 22px;
     }
   }
-
 }
 
 .input-group {
@@ -203,4 +203,25 @@ input[type='submit'] {
 .wirsing-newsletter-headline {
   color: #333;
   margin: 0 0 1.5rem;
+}
+
+.description {
+  @include gridle_container();
+}
+
+.explanation {
+  @include gridle(12);
+}
+
+.benefit {
+  margin-bottom: 2rem;
+}
+
+.benefit-text {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  @include gridle_clear();
+  overflow: hidden;
 }
