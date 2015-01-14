@@ -5,6 +5,7 @@
 
 @include gridle_setup((context: 12, gutter-width: 1rem));
 @include gridle_register_state ( small, (max-width: 558px));
+@include gridle_register_state ( medium, (max-width: 720px));
 @include gridle_generate_classes();
 
 $headline-font: "Oswald", Helvetica, Arial, sans-serif;
@@ -163,7 +164,18 @@ input[type='email'] {
   line-height: 19px;
   /* Email Address: */
   padding: .5rem;
-  width: 35%;
+  width: 55%;
+  /* Stack when small */
+  @include gridle_state(small) {
+    width: 91%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  @include gridle_state(medium) {
+    width: 95%;
+    margin-bottom: 1rem;
+    display: block;
+  }
 }
 
 input[type='submit'] {
@@ -178,6 +190,16 @@ input[type='submit'] {
   line-height: 23px;
   /* Sign up: */
   padding: .5rem;
+  width: 40%;
+  /* Stack when small */
+  @include gridle_state(small) {
+    width: 100%;
+    display: block;
+  }
+  @include gridle_state(medium) {
+    width: 100%;
+    display: block;
+  }
 }
 
 .cta {
