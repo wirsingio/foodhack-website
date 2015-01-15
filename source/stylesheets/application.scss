@@ -36,9 +36,10 @@ p {
 }
 
 h2, h3 {
+  margin-top: .5rem;
   margin-bottom: 1.5rem;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 46px;
   @include gridle_state(small) {
     font-size: 20px;
     line-height: 30px;
@@ -52,7 +53,7 @@ header {
 p {
   margin-bottom: 1rem;
   @include gridle_state(small) {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -76,6 +77,11 @@ a {
 section, header, footer {
   @include gridle(8);
   @include gridle_push(2);
+  @include gridle(11, "medium");
+  @include gridle_push(1, "medium");
+  @include gridle(12, "small");
+  @include gridle_push(0, "small");
+
   margin-bottom: $default-margin-bottom;
 }
 
@@ -108,6 +114,10 @@ li {
     position: relative;
   }
 
+  .banner-words {
+    @include gridle(12);
+  }
+
   .banner-headline {
     color: $wirsing-color;
 
@@ -126,25 +136,25 @@ li {
     margin-bottom: 1rem;
 
     font-size: 36px;
-    line-height: 42px;
+    line-height: 48px;
 
     @include gridle_state(small) {
       font-size: 21px;
-      line-height: 24px
+      line-height: 32px
     }
   }
 
-  .banner-when {
+  .banner-subsubheadline {
     color: $wirsing-light;
 
     margin-bottom: 1rem;
 
     font-size: 29px;
-    line-height: 36px;
+    line-height: 45px;
 
     @include gridle_state(small) {
       font-size: 21px;
-      line-height: 24px
+      line-height: 33px
     }
   }
 }
@@ -158,23 +168,25 @@ input[type='email'] {
   /* Input Background: */
   background: #FFFFFF;
   border: 1px solid #D8D8D8;
+  box-sizing: border-box;
 
   font-size: 18px;
   color: #BBBBBB;
   line-height: 19px;
   /* Email Address: */
   padding: .5rem;
-  width: 55%;
+  width: 60%;
+
+  margin-bottom: 1rem;
+  display: block;
   /* Stack when small */
   @include gridle_state(small) {
     width: 91%;
     margin-bottom: 1rem;
-    display: block;
   }
   @include gridle_state(medium) {
     width: 95%;
     margin-bottom: 1rem;
-    display: block;
   }
 }
 
@@ -190,15 +202,14 @@ input[type='submit'] {
   line-height: 23px;
   /* Sign up: */
   padding: .5rem;
-  width: 40%;
-  /* Stack when small */
+  width: 60%;
+  display: block;
+
   @include gridle_state(small) {
-    width: 100%;
-    display: block;
+    width: 91%;
   }
   @include gridle_state(medium) {
-    width: 100%;
-    display: block;
+    width: 95%;
   }
 }
 
