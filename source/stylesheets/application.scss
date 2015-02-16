@@ -1,19 +1,13 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Oswald|Quattrocento);
+@import 'vars';
 @import 'gridle/gridle';
-
+@import 'modules';
 
 @include gridle_setup((context: 12, gutter-width: 1rem));
 @include gridle_register_state ( small, (max-width: 558px));
 @include gridle_register_state ( medium, (max-width: 720px));
 @include gridle_generate_classes();
-
-$headline-font: "Oswald", Helvetica, Arial, sans-serif;
-$body-font: "Quattrocento", Helvetica, Arial, sans-serif;
-$wirsing-color: #81BD58;
-$wirsing-light: lighten($wirsing-color, 15%);
-
-$default-margin-bottom: 2rem;
 
 body {
   font-size: 21px;
