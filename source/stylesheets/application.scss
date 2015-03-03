@@ -9,6 +9,10 @@
 @include gridle_register_state ( medium, (max-width: 720px));
 @include gridle_generate_classes();
 
+iframe {
+  height: 266px !important;
+}
+
 body {
   font-size: 21px;
   line-height: 30px;
