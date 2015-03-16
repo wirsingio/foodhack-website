@@ -274,16 +274,18 @@ input[type='submit'] {
   @include gridle(8);
   @include gridle(12, "medium");
   @include gridle(12, "small");
-
-  iframe {
-    height: 350px !important;
-  }
 }
 
 .location-info {
   @include gridle(4);
   @include gridle(12, "medium");
   @include gridle(12, "small");
+}
+
+.tickets {
+  iframe {
+    height: 350px !important;
+  }
 }
 
 
