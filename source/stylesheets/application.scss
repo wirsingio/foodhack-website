@@ -269,6 +269,19 @@ input[type='submit'] {
   overflow: hidden;
 }
 
+.location-map {
+  @include gridle(8);
+  @include gridle(12, "medium");
+  @include gridle(12, "small");
+}
+
+.location-info {
+  @include gridle(4);
+  @include gridle(12, "medium");
+  @include gridle(12, "small");
+}
+
+
 footer {
   .headline {
     font-size: 24px;
