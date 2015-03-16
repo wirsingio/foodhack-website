@@ -82,6 +82,7 @@ a {
 
 .container {
   @include gridle_container();
+  padding-bottom: 3rem;
 }
 
 section, header, footer {
