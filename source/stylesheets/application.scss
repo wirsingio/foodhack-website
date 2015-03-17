@@ -261,6 +261,10 @@ input[type='submit'] {
   @include gridle_container();
 }
 
+.main-description {
+  margin-bottom: 3rem;
+}
+
 .explanation {
   @include gridle(12);
 }
