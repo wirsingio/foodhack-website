@@ -79,11 +79,6 @@ dt {
   font-weight: bold;
 }
 
-.wirsing {
-  color: #B8E986;
-  font-size: 22px;
-}
-
 .headline {
   font-family: $headline-font;
 }
@@ -93,7 +88,7 @@ dt {
   padding-bottom: 3rem;
 }
 
-section, header, footer {
+section, header {
   @include gridle(8);
   @include gridle_push(2);
   @include gridle(11, "medium");
@@ -302,9 +297,74 @@ input[type='submit'] {
 
 
 footer {
+
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
   .headline {
     font-size: 24px;
     line-height: 36px;
+    clear: both;
+    margin-top: 1em;
   }
-  text-align: center;
+
+  .wirsing {
+    color: #B8E986;
+    font-size: 30px;
+  }
+
+  .collaborators, .sponsors {
+
+    @include gridle(12);
+
+    li {
+      width: 20%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      float: left;
+
+      @include gridle_state(medium) {
+        width: 50%;
+        margin: 40px auto;
+        float: none;
+      }
+
+      @include gridle_state(small) {
+        width: 80%;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .magdas img {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .wiener-tafel img {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .zero-waste-jam img {
+      margin-top: 20px;
+    }
+
+    .codeship {
+      width: 30%;
+      margin: 0 auto;
+      float: none;
+
+      @include gridle_state(medium) {
+        width: 50%;
+      }
+
+      @include gridle_state(small) {
+        width: 80%;
+      }
+    }
+  }
 }
