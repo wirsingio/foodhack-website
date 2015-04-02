@@ -40,6 +40,10 @@ configure :development do
   activate :livereload, apply_js_live: false, apply_css_live: false
 end
 
+# blog
+activate :blog
+
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
