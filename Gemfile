@@ -10,4 +10,7 @@ gem "middleman-livereload", "~> 3.1.0"
 # deploy this mother
 gem 'middleman-deploy', '~> 0.3.0'
 
+# bloggin' it
+gem 'middleman-blog'
+
 gem 'rake'
