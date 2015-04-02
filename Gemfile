@@ -14,3 +14,9 @@ gem 'middleman-deploy', '~> 0.3.0'
 gem 'middleman-blog'
 
 gem 'rake'
+
+
+# css styling + simple grid system
+gem 'bourbon' # http://bourbon.io/
+gem 'neat' # http://neat.bourbon.io/
+gem 'bitters'

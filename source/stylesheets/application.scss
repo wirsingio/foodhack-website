@@ -1,7 +1,14 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Oswald|Quattrocento);
+
 @import 'vars';
+
 @import 'gridle/gridle';
+
+@import "bourbon";
+@import "base/base";   /* Bitters needs to be imported before Neat */
+@import "neat";
+
 @import 'modules';
 
 @include gridle_setup((context: 12, gutter-width: 1rem));
@@ -88,7 +95,7 @@ dt {
   padding-bottom: 3rem;
 }
 
-section, header {
+section {
   @include gridle(8);
   @include gridle_push(2);
   @include gridle(11, "medium");

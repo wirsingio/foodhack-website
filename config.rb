@@ -41,7 +41,11 @@ configure :development do
 end
 
 # blog
-activate :blog
+activate :blog do |blog|
+  blog.sources   = "posts/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "posts/{year}-{month}-{day}-{title}.html"
+  blog.layout    = "layouts/article"
+end
 
 
 # Methods defined in the helpers block are available in templates
