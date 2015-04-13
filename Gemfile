@@ -14,7 +14,7 @@ gem 'middleman-deploy', '~> 0.3.0'
 gem 'middleman-blog'
 
 gem 'rake'
-
+gem 'nokogiri'
 
 # css styling + simple grid system
 gem 'bourbon' # http://bourbon.io/
