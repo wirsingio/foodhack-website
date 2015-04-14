@@ -1,3 +1,5 @@
+set :s3_url, "https://s3-eu-west-1.amazonaws.com/foodhack"
+
 ###
 # Compass
 ###
@@ -54,6 +56,19 @@ end
 #     "Helping"
 #   end
 # end
+helpers do
+  def slideshow category
+    content_tag(:div, class: "images") {
+      data.images.send(category).map { |name|
+        orig_url = [settings.s3_url, category, "original", name + ".JPG"].join("/")
+        thumb_url = [settings.s3_url, category, "thumbs", name + ".jpeg"].join("/")
+        content_tag(:a, href: orig_url, "data-lightbox" => category) {
+          image_tag thumb_url
+        }
+      }.join("\n")
+    }
+  end
+end
 
 set :css_dir, 'stylesheets'
 
